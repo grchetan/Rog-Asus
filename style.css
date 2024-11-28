@@ -262,3 +262,96 @@ footer {
     margin-top: 20px;
   }
 }
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  /* Navbar adjustments */
+  nav {
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav ul li a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  /* Heading-container adjustments */
+  .heading-container h1 {
+    font-size: 22px;
+    margin: 20px;
+  }
+
+  /* Main container adjustments */
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .items-container {
+    width: 90%;
+  }
+
+  /* Related products adjustments */
+  .Related-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .r-items {
+    margin: 15px 0;
+    width: 100%;
+  }
+
+  /* Footer adjustments */
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-social {
+    margin-bottom: 20px;
+  }
+}
+
+/* For screens smaller than 480px (mobile view) */
+@media screen and (max-width: 480px) {
+  nav {
+    padding: 10px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    margin-right: 15px;
+  }
+
+  .heading-container h1 {
+    font-size: 20px;
+    margin: 15px;
+  }
+
+  .main-container {
+    padding: 0 10px;
+  }
+
+  .items-container {
+    width: 100%;
+  }
+
+  .footer-top {
+    align-items: center;
+  }
+
+  .footer-brand p {
+    font-size: 14px;
+  }
+}
